@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#heroHeading{
+    font-family:Roboto;
+    color: whitesmoke;
+    /* text-shadow: 0 0 0.5px #ff00e6,
+                 0 0 50px #ff00e6,
+                 0 0 5px #ff00e6; */
+    font-size: 100px;
+}
+
+body{
+background-color: rgb(48, 48, 48);
+}
+
+#Prompt {
+    background-color: rgb(31, 30, 30);
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 0 15px;
+    font-family: Roboto;
+    font-size: 16px;
+}
+#promptBox{
+    width: auto; /* just for centering */
+    margin-bottom: 30px;
+}
+#output{
+    background-color: rgb(31, 30, 30);
+    padding-top: 50px;
+    border-radius: 5px;
+    width: 500px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    height: 400px;
+    margin: 0 auto;
+}
+</style>
+<body>
+    <div class="hero">
+    <h1 id="heroHeading">
+        Odsas MB V1
+    </h1>
+    </div>
+    <div class="hero" id="promptBox">
+        <input type="text" id="Prompt" name="Prompt" placeholder="Start building your moodboard!">
+    </div>
+    <div id="output">
+Output
+    </div>
+    
+<!-- This is the crucial line: -->
+
+    <script src="js/main.js" type="module" defer></script>
+
+</body>
+</html>
