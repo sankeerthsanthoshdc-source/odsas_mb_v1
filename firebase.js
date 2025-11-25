@@ -21,4 +21,4 @@ const app = initializeApp(firebaseConfig);
 
 // Initialize the Vertex AI service and get a generative model
 const vertexAI = getVertexAI(app);
-const model = getGenerativeModel(vertexAI, { model: "gemini-pro" });
+export const model = getGenerativeModel(vertexAI, { model: "gemini-pro" });
